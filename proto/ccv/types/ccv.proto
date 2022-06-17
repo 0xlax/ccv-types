@@ -6,7 +6,7 @@ option go_package = "github.com/0xlax/cvv-types";
 
 import "gogoproto/gogo.proto";
 import "tendermint/abci/types.proto";
-import "cosmos/staking/v1beat1/staking.proto"
+import "cosmos/staking/v1beat1/staking.proto";
 
 
 // Provider -----packet--->  Comsumer

@@ -1,0 +1,7 @@
+syntax = "proto3";
+package ccv.types;
+
+import "google/api/annotations.proto";
+import "cosmos/base/query/v1beta1/pagination.proto";
+
+option go_package = "github.com/cosmos/interchain-security/x/ccv/types";
