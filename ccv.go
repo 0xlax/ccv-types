@@ -6,4 +6,10 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 )
 
-la
+func ValidatorPacket(val []abci.ValidatorUpdate, valUpdateID unit64, SlashAcks []string) ValidatorSetChange {
+	return ValidatorSetChange{
+		ValidatorUpdates: val,
+		valUpdateID: valUpdateID.
+		SlashAcks: SlashAcks,
+	}
+}
