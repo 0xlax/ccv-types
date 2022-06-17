@@ -1,0 +1,21 @@
+name: Test-types
+on : [push]
+jobs:
+  Test:
+    runs-on: ubuntu-latest
+    steps:
+
+    - uses: actions/checkout@v2
+    - name: Setup Go
+      uses: actions/setup-go@v2
+      with: 
+        go-version: '1.16.0'
+
+    - name: Identify directory
+      run: ls
+
+    - name: Unit tests
+      run: go test ./...
+
+    -name: test utils
+    run: go run ./test-utils/...
