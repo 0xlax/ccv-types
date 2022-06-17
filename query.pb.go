@@ -26,7 +26,7 @@ var _ = math.Inf
 const _ = proto.GoGoProtoPackageIsVersion3 // please upgrade the proto package
 
 func init() {
-	proto.RegisterFile("interchain_security/ccv/v1/query.proto", fileDescriptor_f0381a0925afc3bc)
+	proto.RegisterFile("ccv/types/query.proto", fileDescriptor_f0381a0925afc3bc)
 }
 
 var fileDescriptor_f0381a0925afc3bc = []byte{
@@ -81,9 +81,9 @@ func RegisterQueryServer(s grpc1.Server, srv QueryServer) {
 }
 
 var _Query_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "interchain_security.ccv.v1.Query",
+	ServiceName: "ccv.types.Query",
 	HandlerType: (*QueryServer)(nil),
 	Methods:     []grpc.MethodDesc{},
 	Streams:     []grpc.StreamDesc{},
-	Metadata:    "interchain_security/ccv/v1/query.proto",
+	Metadata:    "ccv/types/query.proto",
 }
